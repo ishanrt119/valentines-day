@@ -80,12 +80,17 @@
         <h1>Yay! I knew you'd say YES! 🥰💞</h1>
         <p>You are the <b>love</b> to my <b>life()</b> ❤️</p>
         <div class="hearts">💖💖💖</div>
+        <iframe id="song" width="0" height="0" src="" allow="autoplay"></iframe>
     </div>
 
     <script>
         function showLove() {
             document.querySelector(".container").classList.add("hidden");
             document.getElementById("loveMessage").classList.remove("hidden");
+
+            // Play Song (YouTube Link as Audio)
+            document.getElementById("song").src = "https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1";
+
         }
 
         function moveNoButton() {
